@@ -16,7 +16,7 @@ app = Flask(__name__)
 english_bot = ChatBot("English Bot", 
                      storage_adapter = "chatterbot.storage.MongoDatabaseAdapter",
                      database = rizdbmongo,
-                     database_uri = mongodb+srv://rizmongo:AnamZayd@2901@cluster0.cybxs.mongodb.net/test)
+                     database_uri = mongodb://rizmongo:AnamZayd@2901@cluster0.cybxs.mongodb.net/test)
 trainer = ChatterBotCorpusTrainer(english_bot)
 trainer.train("chatterbot.corpus.english")
 
